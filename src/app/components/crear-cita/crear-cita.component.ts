@@ -35,6 +35,8 @@ export class CrearCitaComponent implements OnInit {
       sintomas: this.sintomas,
     }
 
+    this.nuevaCita.emit(CITA);
+
     this.resetCampos();
     console.log(CITA)
   }
