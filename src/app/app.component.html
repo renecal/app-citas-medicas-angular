@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     <div class="col-6">
-      <app-crear-cita></app-crear-cita>
+      <app-crear-cita (nuevaCita)="agregarCita($event)"></app-crear-cita>
     </div>
     <div class="col-6">
       <app-list-citas></app-list-citas>

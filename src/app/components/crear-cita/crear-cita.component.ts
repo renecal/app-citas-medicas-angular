@@ -38,7 +38,6 @@ export class CrearCitaComponent implements OnInit {
     this.nuevaCita.emit(CITA);
 
     this.resetCampos();
-    console.log(CITA)
   }
 
   resetCampos(){
