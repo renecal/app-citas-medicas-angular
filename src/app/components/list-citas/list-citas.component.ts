@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list-citas',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListCitasComponent implements OnInit {
 
+  @Input() listadoCitas: any;
   constructor() { }
 
   ngOnInit(): void {

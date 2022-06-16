@@ -10,8 +10,6 @@ export class AppComponent {
   listCitas: any = [];
 
   agregarCita(cita: any){
-    console.log('soy el padre');
-    console.log(cita);
     this.listCitas.push(cita);
   }
 
