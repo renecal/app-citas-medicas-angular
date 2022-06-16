@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crear-cita.component.css']
 })
 export class CrearCitaComponent implements OnInit {
-  nombre = '';
-  fecha = '';
-  hora = '';
-  sintomas = '';
+  nombre = ''; // se bindean desde el formulario con la directiva ngModel
+  fecha = ''; // se bindean desde el formulario con la directiva ngModel
+  hora = ''; // se bindean desde el formulario con la directiva ngModel
+  sintomas = ''; // se bindean desde el formulario con la directiva ngModel
 
   formularioIncorrecto = false;
 
