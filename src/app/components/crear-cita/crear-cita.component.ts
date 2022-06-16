@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-crear-cita',
@@ -13,7 +13,9 @@ export class CrearCitaComponent implements OnInit {
 
   formularioIncorrecto = false;
 
-  
+  // enviaremos CITA a travez del decorador output, eventEmitter tipo any, se puede especificar.
+  @Output() nuevaCita = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit(): void {
