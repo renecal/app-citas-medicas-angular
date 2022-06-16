@@ -1,8 +1,22 @@
-<div class="card">
+<div class="card" *ngIf="listadoCitas.length === 0">
+  <div class="card-header">
+    Listado de citas
+  </div>
+  <div class="card-body" >
+    No hay citas para mostrar
+  </div>
+</div>
+<div class="card" *ngIf="listadoCitas.length > 0">
   <div class="card-header">
     Listado de citas
   </div>
   <div class="card-body">
-    affa
+    <ul class="list-group mt-3" *ngFor="let cita of listadoCitas; let i = index;">
+      <li class="list-group-item bg-dark text-white">{{ cita.nombre }}</li>
+      <li class="list-group-item">{{ cita.fecha }}</li>
+      <li class="list-group-item">{{ cita.hora }}</li>
+      <li class="list-group-item">{{ cita.sintomas }}</li>
+      <button class="btn btn-primary">Eliminar</button>
+    </ul>
   </div>
 </div>
